@@ -30,6 +30,7 @@ def get_quiz(request):
         correct = before_correct
         next_url = 'quiz' if int(index) < 4 else 'result'
         # 연산 ? 참값 : 거짓값
+        # 이거 사실 비교 할 필요 없이 quiz로 연결시켜도 됨! 앞에 GET 처리 로직에서 result로 가게 되어있기 때문에
 
         if answer == kor[index]:
             correct+=1
